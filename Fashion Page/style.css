@@ -26,7 +26,6 @@ body {
 /* Targeting the left-top-left and it's elements */
 
 #left-top-left {
-  /* background-color: red; */
   padding: 40px;
 }
 
@@ -40,7 +39,6 @@ body {
 /* Targeting the left-top-right and it's elements */
 
 #left-top-right {
-  /* background-color: blue; */
   justify-self: right;
   padding: 40px;
   text-align: right;
@@ -81,10 +79,37 @@ body {
 }
 #left-bottom p{
     width: 70%;
+    color: #333;
 }
 
+/* Targeting the right and it's elements */
 #right {
-  background-color: pink;
   grid-column: 3;
   grid-row: 1/4;
+  padding: 40px 140px 40px 40px;
+}
+
+#right video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#arrow{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    padding: 20px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+#arrow i{
+    font-size: 40px;
+    font-weight: 100;
 }
